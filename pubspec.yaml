@@ -1,0 +1,73 @@
+name: delivery_app
+description: Delivery Service App - Client & Admin with Swahili support
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.1
+
+  # UI Components
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  lottie: ^2.7.0
+
+  # Navigation
+  go_router: ^12.1.1
+
+  # Storage & Data
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # Maps & Location
+  geolocator: ^11.0.0
+  geocoding: ^3.0.0
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.0
+
+  # Network
+  http: ^1.1.0
+  dio: ^5.4.0
+
+  # Utils
+  intl: 0.20.2
+  uuid: ^4.2.1
+  image_picker: ^1.0.7
+  permission_handler: ^11.1.0
+  badges: ^3.1.2
+  fl_chart: ^0.66.2
+  timeline_tile: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_gen_runner: ^5.4.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
